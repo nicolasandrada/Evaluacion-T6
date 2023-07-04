@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="img/logo.png" alt="">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="">¿Quienes somos?</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Seguridad</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="">
+            <div>
+                <h3>Nombre</h3>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+
+            <div>
+                <h3>Direccion</h3>
+                <input type="text" name="direccion" id="direccion">
+            </div>
+
+            <div class="horario">
+                <h3>Horario de la Instalacion</h3>
+                <label for="dia">Dia</label>
+                <select name="dia" id="dia">
+                    <option value="Lunes">Lunes</option>
+                    <option value="Martes">Martes</option>
+                    <option value="Miercoles">Miercoles</option>
+                    <option value="Jueves">Jueves</option>
+                    <option value="Viernes">Viernes</option>
+                </select>
+                <label for="turno">Turno</label>
+                <select name="turno" id="turno">
+                    <option value="Mañana">Mañana de 8 a 12Hs</option>
+                    <option value="Tarde">Tarde de 13 a 17Hs</option>
+                </select>
+            </div>
+
+            <h3>Servicio</h3>
+            <div class="servicio">
+                
+                <p>
+                    Se realiza un 10% de descuento los primeros 6 meses con la contratacion de 2 servicios <br>
+                    Se realiza un 25% de descuento los primeros 12 meses con la contratacion de 3 servicios
+                </p>
+
+                <div>
+                    <div>
+                        <label for="internet">Internet</label>
+                        <input type="checkbox" name="servicio[]" id="internet" value="internet">
+                    </div>
+                    <div>
+                        <label for="telefono">Telefono</label>
+                        <input type="checkbox" name="servicio[]" id="telefono" value="telefono">
+                    </div>
+                    <div>
+                        <label for="television">Television</label>
+                        <input type="checkbox" name="servicio[]" id="television" value="television">
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <div>
+                <input type="button" value="Contratar" id="calcular">
+            </div>
+
+        </form>   
+
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
