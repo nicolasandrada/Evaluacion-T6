@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Covidelpi</title>
+</head>
+
+<body>
+    <div class="fondo">
+        <header>
+            <div class="header">
+                <img src="img/logo.png" alt="" height="90px" class="header-item">
+                <a class="header-item" href="">¿Quienes somos?</a>
+                <a class="header-item" href="">Contacto</a>
+                <a class="header-item" href="">Seguridad</a>
+            </div>
+        </header>
+        <br>
+        <main>
+            <div class="contenedor">
+                <form action="">
+                    <div class="nombre">
+                        <h2 class="titulo">Nombre</h2>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+
+                    <div class="direccion">
+                        <h2 class="titulo">Direccion</h2>
+                        <input type="text" name="direccion" id="direccion">
+                    </div>
+
+                    <div class="horario">
+                        <h2 class="titulo">Horario de la Instalacion</h2>
+                        <label for="dia">Dia</label>
+                        <select name="dia" id="dia">
+                            <option value="Lunes">Lunes</option>
+                            <option value="Martes">Martes</option>
+                            <option value="Miercoles">Miercoles</option>
+                            <option value="Jueves">Jueves</option>
+                            <option value="Viernes">Viernes</option>
+                        </select>
+                        <label for="turno">Turno</label>
+                        <select name="turno" id="turno">
+                            <option value="Mañana">Mañana de 8 a 12Hs</option>
+                            <option value="Tarde">Tarde de 13 a 17Hs</option>
+                        </select>
+                    </div>
+
+                    <h2>Servicio</h2>
+                    <div class="contenedor1">
+                        <div class="servicio">
+                            <div class="des">
+                                <p>
+                                    <h41>
+                                        Se realiza un 10% de descuento los primeros 6 meses con la contratacion de 2
+                                        servicios
+                                        <br>
+                                        Se realiza un 25% de descuento los primeros 12 meses con la contratacion de 3
+                                        servicios
+                                        </h4>
+                                </p>
+                            </div>
+                            <div class="tipos">
+                                <div>
+                                    <label for="internet">Internet</label>
+                                    <input type="checkbox" name="servicio[]" id="internet">
+                                </div>
+                                <div>
+                                    <label for="telefono">Telefono</label>
+                                    <input type="checkbox" name="servicio[]" id="telefono">
+                                </div>
+                                <div>
+                                    <label for="television">Television</label>
+                                    <input type="checkbox" name="servicio[]" id="television">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <input type="button" value="Contratar" id="calcular" class="contra">
+                </form>
+            </div>
+        </main>
+
+        <script src="js/index.js"></script>
+    </div>
+</body>
+
+</html>
